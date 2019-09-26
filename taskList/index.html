@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Task-List</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #007991, #78ffd6);
+        }
+
+        .mobin {
+            background-color: rgba(0, 0, 0, 0.082);
+            ;
+            color: #fff;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+            font-size: 1rem;
+            padding: 13px 5px;
+            position: fixed;
+            top: 65%;
+            left: 0;
+        }
+
+        .mobin:hover {
+            background: #333;
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div id="main" class="card">
+                    <div class="card-content">
+                        <span class="card-title">
+                            Task List
+                        </span>
+                        <div class="row">
+                            <form id="task-form">
+                                <div class="input-field col s12">
+                                    <input type="text" name="task" id="task">
+                                    <label for="task">New Name </label>
+                                </div>
+                                <input type="submit" value="Add Task" class="btn">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <h5 id="task-title">Task</h5>
+                        <div class="input-field col s12">
+                            <input type="text" name="filter" id="filter">
+                            <label for="filter">Filter Tasks
+                        </div>
+                        <ul class="collection">
+
+                        </ul>
+                        <a href="#" target="_self" class="clear-tasks btn black">Clear Tasks</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="http://github.com/mobink09" class="mobin">codeWithMobin</a>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
